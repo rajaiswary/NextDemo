@@ -40,6 +40,7 @@ export const generatePagination = (currentPage: number, totalPages: number) => {
   // display all pages without any ellipsis.
   if (totalPages <= 7) {
     return Array.from({ length: totalPages }, (_, i) => i + 1);
+    //this would return [1,2,3,4,5,6,7,8,9]
   }
 
   // If the current page is among the first 3 pages,
